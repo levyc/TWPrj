@@ -1,0 +1,12 @@
+// 商品数据结构
+goods:
+  name: 名称, 字符串
+  unit: 单位, 字符串
+  price: 单价, 浮点数
+  style: 类别, 字符串
+  code: 条形码, 字符串, 具有唯一性
+
+// 优惠信息
+preferential:
+  TwoFreeOne: "买二赠一", 数组(存储条形码)
+  NineFiveDiscount: "95折", 数组(存储条形码)

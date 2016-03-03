@@ -1,0 +1,24 @@
+goods.js:
+  作用: 存储商品的基本信息.
+  操作: 增加/删除商品信息, 通过条形码获取商品信息.
+
+preft.js:
+  作用: 存储优惠信息
+  操作: 增加/删除优惠信息
+
+备注:
+1. 之所以将商品基本信息和优惠信息分别模块化,是因为实际项目中goods.js/preft.js本应该对应数据库的表.
+2. 由于preft.js的数据结构简单,可以将其提升到index.js主模块中. 但不利于后期进行扩展.
+
+index.js:
+  作用: 读取购买的商品信息和优惠信息,将小票进行打印.
+
+data/buy.json:
+  存储购买商品的条形码.
+
+data/goods.json:
+  存储所有商品的基本信息
+
+data/preft.json~preft3.json:
+  存储优惠信息.
+备注: preft1.json, preft2.json, preft3.json分别用于测试.只要在index.js中引用它们即可.
